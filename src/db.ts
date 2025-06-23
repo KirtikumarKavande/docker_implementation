@@ -1,6 +1,9 @@
 import mongoose, { Schema, model } from 'mongoose';
+import dotenv from 'dotenv';
 
-const mongoUrl: string = 'mongodb://localhost:27017/myDatabase';
+dotenv.config();
+console.log(process.env.MONGO_URL)
+const mongoUrl: string = process.env.MONGO_URL || 'mongodb://localhost:27017/myDatabase';
 
 // Connect to MongoDB
 mongoose.connect(mongoUrl)
