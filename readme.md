@@ -18,4 +18,4 @@ now run node code in container
 docker run  -p 3000:3000 --name backend --network kirtikumarnetwork networkcheck
 
 networkcheck is name of image
-here –name is not imp as we are not going to use it anywhere
+here –name is not imp as we are not going to use it anywhere.
